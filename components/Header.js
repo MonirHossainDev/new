@@ -1,20 +1,28 @@
-import { useState } from 'react';
+import Link from 'next/link';
+import { RiTwitterFill, RiInstagramLine } from 'react-icons/ri';
 const Header = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   return (
     <header className='header'>
       <div className='header__logo'>
-        <a href=''>Monir Hossain</a>
+        <Link href='/'>Monir Hossain</Link>
       </div>
       <div className='header__nav'>
         <ul>
           <li>
-            <a href=''>About Me</a>
+            <a href='https://twitter.com/MonirHossainPro' target='_blank' rel='noreferrer'>
+              <RiTwitterFill />
+            </a>
           </li>
           <li>
-            <a href=''>FB Group</a>
+            <a href='https://instagram.com/MonirHossainPro' target='_blank' rel='noreferrer'>
+              <RiInstagramLine />
+            </a>
           </li>
+          {/* <li>
+            <a href='https://linkedin.com/MonirHossainPro'>
+              <RiLinkedinBoxFill />
+            </a>
+          </li> */}
         </ul>
       </div>
     </header>

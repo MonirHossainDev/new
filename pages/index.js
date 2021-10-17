@@ -1,13 +1,8 @@
-import { OnePortfolio, TwoPortfolio } from '../portfolios';
-
 const index = () => {
   return (
-    <div>
-      <div className='page-title'>
-        <h2>Bootstrap 5</h2>
-      </div>
-      <OnePortfolio />
-      <TwoPortfolio />
+    <div className='text-center'>
+      <h1>Hi, I am Monir Hossain</h1>
+      <p>Freelance specialist in responsive WordPress design, front-end design, custom WordPress builds and WooCommerce. </p>
     </div>
   );
 };

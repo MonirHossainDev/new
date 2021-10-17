@@ -1,21 +1,16 @@
+import Meta from './Meta';
 import Header from './Header';
-import LeftSidebar from './LeftSidebar';
-import RightSidebar from './RightSidebar';
-
+import LeftContent from './LeftContent';
+import RightContent from './RightContent';
 const Layout = ({ children }) => {
   return (
     <>
+      <Meta />
       <Header />
-      <section className='main'>
-        <div className='content'>
-          <div className='content__area'>
-            <main className='content__area--main'>
-              <section>{children}</section>
-            </main>
-            <RightSidebar />
-          </div>
-          <LeftSidebar />
-        </div>
+      <section className='content'>
+        <LeftContent />
+        <div className='content__main'>{children}</div>
+        <RightContent />
       </section>
     </>
   );
